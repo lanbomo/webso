@@ -1,17 +1,17 @@
 {
-  "name": "webs",
+  "name": "webso",
   "version": "0.0.1",
-  "description": "webs is a command-line http server.",
+  "description": "webso is a command-line http server.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "webs": "./bin/webs.js"
+    "webso": "./bin/webso.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lanbomo/webs.git"
+    "url": "git+https://github.com/lanbomo/webso.git"
   },
   "keywords": [
     "http",
@@ -22,9 +22,9 @@
   "author": "lanbo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lanbomo/webs/issues"
+    "url": "https://github.com/lanbomo/webso/issues"
   },
-  "homepage": "https://github.com/lanbomo/webs#readme",
+  "homepage": "https://github.com/lanbomo/webso#readme",
   "dependencies": {
     "commander": "6.1.0",
     "express": "4.17.1",
