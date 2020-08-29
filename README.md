@@ -1,6 +1,8 @@
 # webso
 webso is a command-line http server.
 
+by lanbo.
+
 # usage
 
 ```shell
