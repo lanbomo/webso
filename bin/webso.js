@@ -31,7 +31,6 @@ program
             port = await portfinder.getPortPromise();
         }
         const absDir = path.resolve(process.cwd(), dir || './');
-        console.log(port, process.cwd(), dir, absDir, opts.proxy);
 
         serverBoot({ port, dir: absDir, baseUrl: opts.baseUrl, cors: opts.cors, proxyUrl: opts.proxy });
     });
