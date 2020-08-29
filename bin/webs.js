@@ -17,6 +17,7 @@ const defaultPort = 8080;
 
 program
     .arguments('[dir]')
+    .description('webs is a command-line http server. by lanbo')
     .option('-p, --port <port>', "server's port (defaults to 8080)", parseInt)
     .option('-P, --proxy <proxy>', 'proxy request to url. e.g: -P http://url.com')
     .option('--cors', 'add CORS header Access-Control-Allow-Origin')
