@@ -16,10 +16,11 @@ const program = new Command();
 program.version(version);
 
 const defaultPort = 8080;
+const desc = `webso is a command-line http server. current version is ${version}\nby lanbo`;
 
 program
     .arguments('[dir]')
-    .description('webso is a command-line http server. by lanbo')
+    .description(desc)
     .option('-p, --port <port>', "server's port (defaults to 8080)", parseInt)
     .option('-P, --proxy <proxy>', 'proxy request to url. e.g: -P http://url.com')
     .option('--cors', 'add CORS header Access-Control-Allow-Origin')
@@ -31,6 +32,8 @@ program
             port = await portfinder.getPortPromise();
         }
         const absDir = path.resolve(process.cwd(), dir || './');
+
+        console.log(desc + '\n');
 
         serverBoot({ port, dir: absDir, baseUrl: opts.baseUrl, cors: opts.cors, proxyUrl: opts.proxy });
     });
