@@ -3,6 +3,12 @@ webso is a command-line http server.
 
 by lanbo.
 
+# install
+
+```shell
+npm install webso -g
+```
+
 # usage
 
 ```shell
